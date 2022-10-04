@@ -1,0 +1,20 @@
+.btnc {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  .matsnc{
+    height: calc(205vh - 115vh);
+  }
+
+  .matsn{
+    background-color: cornflowerblue;
+    width: 250px;
+  }
+
+  .matsnb{
+    justify-content: center;
+    height:70px;
+    width:249px;
+  }

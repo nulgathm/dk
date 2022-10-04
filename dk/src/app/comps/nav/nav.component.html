@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <div class="btnc">
+            <button mat-button (click)="opened=!opened">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+          <div routerLink="/homepage">
+            <button mat-button>
+              <mat-icon>home</mat-icon>
+            Home</button>
+          </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="matsnc">
+    <mat-sidenav class="matsn" [(opened)]="opened" mode="side">
+        <button class="matsnb" mat-button routerLink="/overview">Overview</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
