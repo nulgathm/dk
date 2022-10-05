@@ -1,1 +1,45 @@
-<p>overview works!</p>
+<mat-tab-group animationDuration="1000ms">
+    <mat-tab label="">  
+        <div class="mt2">
+            <mat-grid-list cols="4" rowHeight="430px">
+                <mat-grid-tile
+                    *ngFor="let tile of tiles"
+                    [colspan]="tile.cols"
+                    [rowspan]="tile.rows"
+                    [style.background]="tile.color">
+                  {{tile.text}}
+                </mat-grid-tile>
+              </mat-grid-list>
+        </div> 
+    </mat-tab>
+    
+    <mat-tab label="">
+        <div class="mt2">
+            <img class="img2" src="https://i.pinimg.com/564x/d8/53/68/d85368c8c57b068e62fd47f6755317d6.jpg" alt="one">
+        </div>  
+        </mat-tab>
+    
+    <mat-tab label="">
+        <div class="mt2">
+            <img class="img2" src="https://i.pinimg.com/564x/a5/73/c6/a573c63afe8fd02ebcb73131089f6df2.jpg" alt="one">
+        </div> 
+    </mat-tab>
+    
+    <mat-tab label="">
+        <div class="mt2">
+            <img class="img2" src="https://i.pinimg.com/564x/e3/e7/5c/e3e75c233f709b30538cca5e39b6fa46.jpg" alt="one">
+        </div> 
+    </mat-tab>
+    
+    <mat-tab label="">
+        <div class="mt2">
+            <img class="img2" src="https://i.pinimg.com/564x/39/84/7e/39847ee6be206f9b1453722956261147.jpg" alt="one">
+        </div> 
+    </mat-tab>
+    
+    <mat-tab label="">
+        <div class="mt2">
+            <img class="img2" src="https://i.pinimg.com/564x/8c/b1/f7/8cb1f773d581ff99bede558d0eb758ba.jpg" alt="one">
+        </div> 
+    </mat-tab>
+  </mat-tab-group>
